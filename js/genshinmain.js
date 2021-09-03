@@ -4,16 +4,10 @@ var mainURL = "https://api.genshin.dev";
 var charactersURL = mainURL + "/characters";
 //console.log("charactersURL: " + charactersURL);
 
-var Characters = [];
 var charLength;
-var dataset = {};
 var oneCharacterURL = [];
-/*Characters[0] = "a";
-Characters[1] = "b";
-console.log("Characters[0]: " + Characters[0]);
-console.log("Characters[1]: " + Characters[1]);*/
 
-// Get value in https://api.genshin.dev/characters
+// Get data in https://api.genshin.dev/characters
 fetch(charactersURL)
     .then(response => response.json())
     .then(data => {
@@ -21,35 +15,45 @@ fetch(charactersURL)
         charLength = data.length;
         //console.log("charLength: " + charLength)
 
+        // Get every character URL to the Array
         for(var i=0; i<charLength; i++) {
-            // Get every character URL to the Array
-            oneCharacterURL[i] = getEveryCharURL(data[i])
+            oneCharacterURL[i] = getEveryCharURL(data[i]);
             //Characters[i] = data[i];
-            //console.log("Characters[i]: " + Characters[i])
+            //console.log("Characters[i]: " + Characters[i]);
         }
 
-        dataset = data;
         init();
     }
 );
 
 function getEveryCharURL(charValue) {
     var oneCharURL = charactersURL + "/" + charValue;
-    console.log("oneCharURL: " + oneCharURL);
-
+    //console.log("oneCharURL: " + oneCharURL);
     return oneCharURL;
 }
 
-function init() {
-    console.log("dataset: " + dataset);
-    console.log("charLength: " + charLength)
-    console.log("dataset[0]: " + dataset[0]);
-    console.log("oneCharacterURL[0]: " + oneCharacterURL[0]);
-    // code goes here
+function getOneCharJSON(oneCharacterURL) {
+    //console.log("getOneCharJSON oneCharacterURL: " + oneCharacterURL);
+    return fetch(oneCharacterURL)
+        .then((response) => response.json())
+        .then(data => {
+            // Logic here?
+            console.log(data.name + " vision is " + data.vision);
+            return data;
+        })
+        .catch((error) => console.log(error));
 }
 
+function init() {
+    console.log("charLength: " + charLength)
+    document.getElementById("characters").innerHTML = charLength;
+    //console.log("oneCharacterURL[0]: " + oneCharacterURL[0]);
 
-
+    for(var i=0; i<charLength; i++) {
+        //console.log("oneCharacterURL[i]: " + oneCharacterURL[i]);
+        getOneCharJSON(oneCharacterURL[i]);
+    }
+}
 
 
 // browserify js/genshinmain.js -o js/genshinbundle.js
