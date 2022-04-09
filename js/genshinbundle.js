@@ -21,15 +21,52 @@ document.getElementById("Characters_Length").innerHTML = CharactersLength;
 
 // Functions for checkboxes
 var buttonMondstadt = document.getElementById("Mondstadt");
-buttonMondstadt.addEventListener("click", abc);
-
-function abc() {
-    if (document.getElementById('Mondstadt').checked) {
-        console.log("Checked!");
-    } else {
-        console.log("Unchecked!");
+buttonMondstadt.addEventListener("click",
+    function () {
+        if (buttonMondstadt.checked) {
+            //console.log("Checked!");
+            for (var i=0; i<CharactersLength; i++) {
+                if (Characters[i].nation == "Mondstadt") {
+                    console.log(Characters[i].nation + " char found = " + Characters[i].firstname);
+                }
+            }
+        } else {
+            console.log("Unchecked!");
+        }
     }
-}
+);
+
+var buttonLiyue = document.getElementById("Liyue");
+buttonLiyue.addEventListener("click",
+    function () {
+        if (buttonLiyue.checked) {
+            //console.log("Checked!");
+            for (var i=0; i<CharactersLength; i++) {
+                if (Characters[i].nation == "Liyue") {
+                    console.log(Characters[i].nation + " char found = " + Characters[i].firstname);
+                }
+            }
+        } else {
+            console.log("Unchecked!");
+        }
+    }
+);
+
+var buttonInazuma = document.getElementById("Inazuma");
+buttonInazuma.addEventListener("click",
+    function () {
+        if (buttonInazuma.checked) {
+            //console.log("Checked!");
+            for (var i=0; i<CharactersLength; i++) {
+                if (Characters[i].nation == "Inazuma") {
+                    console.log(Characters[i].nation + " char found = " + Characters[i].firstname);
+                }
+            }
+        } else {
+            console.log("Unchecked!");
+        }
+    }
+);
 
 
 // browserify js/genshinmain.js -o js/genshinbundle.js

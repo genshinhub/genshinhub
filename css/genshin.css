@@ -1,14 +1,18 @@
-body {
-    background-color: #111;
-    color: #EEE;
+.testbg {
+    background-color: #0FA !important;
+}
+.testbg2 {
+    background-color: #F0A !important;
 }
 
-h1 {
-    font-family: Arial;
+/*
+body {
+    background-color: #111 !important;
+    color: #EEE !important;
 }
 
 .checkboxButton {
-    margin: 0px;
+    margin: 1px;
     background-color: #444;
     overflow: hidden;
     float: left;
@@ -55,9 +59,10 @@ h1 {
 }
 
 .selectors input:checked+span {
-    background-color: #44aa00;
+    background-color: #44aa00 !important;
 }
 
 .nation input:checked+span {
     background-color: #F75A1B;
 }
+*/
