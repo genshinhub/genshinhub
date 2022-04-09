@@ -1,0 +1,31 @@
+{
+    "firstname": "Beidou",
+    "lastname": "",
+    "img": "https://uploadstatic-sea.hoyoverse.com/contentweb/20200227/2020022720085973518.png",
+    "gender": "Female",
+    "voice": [
+        {
+            "language": "CN",
+            "name": "Yajing Tang"
+        },
+        {
+            "language": "EN",
+            "name": "Allegra Clark"
+        },
+        {
+            "language": "JP",
+            "name": "Ami Koshimizu"
+        },
+        {
+            "language": "KR",
+            "name": "Jeong Yoo-mi"
+        }
+    ],
+    "vision": "Electro",
+    "weapon": "Claymore",
+    "nation": "Liyue",
+    "rarity": 4,
+    "constellation": "Victor Mare",
+    "birthday": "0000-02-14",
+    "specialdish": "Flash-Fried Filet"
+}

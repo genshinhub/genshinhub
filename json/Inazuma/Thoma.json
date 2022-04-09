@@ -1,0 +1,31 @@
+{
+    "firstname": "Thoma",
+    "lastname": "",
+    "img": "https://uploadstatic-sea.hoyoverse.com/contentweb/20211203/2021120311564937286.png",
+    "gender": "Male",
+    "voice": [
+        {
+            "language": "CN",
+            "name": "Pei Zhang"
+        },
+        {
+            "language": "EN",
+            "name": "Christian Banas"
+        },
+        {
+            "language": "JP",
+            "name": "Masakazu Morita"
+        },
+        {
+            "language": "KR",
+            "name": "Ryu Seung-gon"
+        }
+    ],
+    "vision": "Pyro",
+    "weapon": "Polearm",
+    "nation": "Inazuma",
+    "rarity": 4,
+    "constellation": "Rubeum Scutum",
+    "birthday": "0000-01-09",
+    "specialdish": "Warmth"
+}

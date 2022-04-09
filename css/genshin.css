@@ -1,0 +1,58 @@
+h1 {
+    font-family: Arial;
+}
+
+.checkboxButton {
+    margin: 0px;
+    background-color: #AAA;
+    overflow: hidden;
+    float: left;
+}
+
+.selectors {
+    background-color: #DDD;
+}
+
+.checkboxButton label {
+    float: left;
+    height: 3.0em;
+    line-height: 3.0em;
+    width: 8.0em;
+}
+
+.checkboxButton label span {
+    text-align: center;
+    display: block;
+}
+
+.checkboxButton label input {
+    display: none;
+}
+
+.checkboxButton label input+span {
+    color: #FFF;
+    border: 1px #0f0;
+    user-select: none;
+}
+
+.selectors label input+span {
+    color: #000;
+    border: 1px #0f0;
+    user-select: none;
+}
+
+.checkboxButton input:checked+span {
+    color: #ffffff;
+}
+
+.selectors input:checked+span {
+    color: #000000;
+}
+
+.selectors input:checked+span {
+    background-color: #44aa00;
+}
+
+.nation input:checked+span {
+    background-color: #F75A1B;
+}

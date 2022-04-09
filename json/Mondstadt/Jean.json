@@ -1,0 +1,31 @@
+{
+    "firstname": "Jean",
+    "lastname": "Gunnhildr",
+    "img": "https://uploadstatic-sea.hoyoverse.com/contentweb/20200616/2020061611214389168.png",
+    "gender": "Female",
+    "voice": [
+        {
+            "language": "CN",
+            "name": "Su Lin"
+        },
+        {
+            "language": "EN",
+            "name": "Stephanie Southerland"
+        },
+        {
+            "language": "JP",
+            "name": "Chiwa Saito"
+        },
+        {
+            "language": "KR",
+            "name": "Ahn Young-mi"
+        }
+    ],
+    "vision": "Anemo",
+    "weapon": "Sword",
+    "nation": "Mondstadt",
+    "rarity": 5,
+    "constellation": "Leo Minor",
+    "birthday": "0000-03-14",
+    "specialdish": "Invigorating Pizza"
+}

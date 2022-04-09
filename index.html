@@ -1,19 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<title>Genshin Hub</title>
 	<meta charset="utf-8">
 	<meta name="Genshin Hub" content="Genshin Hub">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/genshin.css">
 </head>
+
 <body>
-<h1>Genshin Hub</h1>
+	<h1>Genshin Hub</h1>
 
-<div>Characters: <span id="characters"></span></div>
+	Total Characters: <span id="Characters_Length"></span><br>
 
-<p>API from https://genshin.dev</p>
+	<form>
+		<input type="text" id="Search_Bar" placeholder="Search Bar">
+		<button type="button" id="Click_Button">Search</button>
+	</form>
 
-<script src="js/genshinmain.js"></script>
-<!--script src="js/genshinbundle.js"></script-->
+	<form>
+		<div class="checkboxButton nation">
+			<label>
+				<input type="checkbox" id="Mondstadt">
+				<span>Mondstadt</span>
+			</label>
+		</div>
+
+		<div class="checkboxButton nation">
+			<label>
+				<input type="checkbox" id="Liyue">
+				<span>Liyue</span>
+			</label>
+		</div>
+
+		<div class="checkboxButton nation">
+			<label>
+				<input type="checkbox" id="Inazuma">
+				<span>Inazuma</span>
+			</label>
+		</div>
+
+		<div class="checkboxButton selectors">
+			<label>
+				<input type="checkbox" id="SelectAllNations">
+				<span>Select All</span>
+			</label>
+		</div>
+
+		<div class="checkboxButton selectors">
+			<label>
+				<input type="checkbox" id="UnselectAllNations">
+				<span>Unselect All</span>
+			</label>
+		</div>
+	</form>
+
+	<!--form>
+		[Gender]
+		<input type="checkbox" id="Male" name="Male" value="Male">
+		<label for="Male"> Male</label>
+		<input type="checkbox" id="Female" name="Female" value="Female">
+		<label for="Female"> Female</label>
+		<button type="button">Select All</button>
+		<button type="button">Unselect All</button>
+	</form>
+
+	<form>
+		[Vision]
+		<input type="checkbox" id="Anemo" name="Anemo" value="Anemo">
+		<label for="Anemo"> Anemo</label>
+		<input type="checkbox" id="Cryo" name="Cryo" value="Cryo">
+		<label for="Cryo"> Cryo</label>
+		<input type="checkbox" id="Dendro" name="Dendro" value="Dendro">
+		<label for="Dendro"> Dendro</label>
+		<input type="checkbox" id="Electro" name="Electro" value="Electro">
+		<label for="Electro"> Electro</label>
+		<input type="checkbox" id="Geo" name="Geo" value="Geo">
+		<label for="Geo"> Geo</label>
+		<input type="checkbox" id="Hydro" name="Hydro" value="Hydro">
+		<label for="Hydro"> Hydro</label>
+		<input type="checkbox" id="Pyro" name="Pyro" value="Pyro">
+		<label for="Pyro"> Pyro</label>
+		<button type="button">Select All</button>
+		<button type="button">Unselect All</button>
+	</form>
+
+	<form>
+		[Weapon]
+		<input type="checkbox" id="Bow" name="Bow" value="Bow">
+		<label for="Bow"> Bow</label>
+		<input type="checkbox" id="Catalyst" name="Catalyst" value="Catalyst">
+		<label for="Catalyst"> Catalyst</label>
+		<input type="checkbox" id="Claymore" name="Claymore" value="Claymore">
+		<label for="Claymore"> Claymore</label>
+		<input type="checkbox" id="Polearm" name="Polearm" value="Polearm">
+		<label for="Polearm"> Polearm</label>
+		<input type="checkbox" id="Sword" name="Sword" value="Sword">
+		<label for="Sword"> Sword</label>
+		<button type="button">Select All</button>
+		<button type="button">Unselect All</button>
+	</form-->
+
+	<div id="Output"></div>
+
+	<script src="js/genshinbundle.js"></script>
 </body>
+
 </html>
