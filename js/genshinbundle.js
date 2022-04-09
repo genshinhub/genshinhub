@@ -1,6 +1,4 @@
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
-
-
 // Mondstadt Characters
 var Jean = require("../json/Mondstadt/Jean.json");
 
@@ -20,6 +18,19 @@ var Characters = [
 var CharactersLength = Characters.length;
 console.log("CharactersLength = " + CharactersLength);
 document.getElementById("Characters_Length").innerHTML = CharactersLength;
+
+// Functions for checkboxes
+var buttonMondstadt = document.getElementById("Mondstadt");
+buttonMondstadt.addEventListener("click", abc);
+
+function abc() {
+    if (document.getElementById('Mondstadt').checked) {
+        console.log("Checked!");
+    } else {
+        console.log("Unchecked!");
+    }
+}
+
 
 // browserify js/genshinmain.js -o js/genshinbundle.js
 

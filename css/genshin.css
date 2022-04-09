@@ -9,13 +9,13 @@ h1 {
 
 .checkboxButton {
     margin: 0px;
-    background-color: #AAA;
+    background-color: #444;
     overflow: hidden;
     float: left;
 }
 
 .selectors {
-    background-color: #DDD;
+    background-color: #777;
 }
 
 .checkboxButton label {

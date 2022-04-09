@@ -18,4 +18,17 @@ var CharactersLength = Characters.length;
 console.log("CharactersLength = " + CharactersLength);
 document.getElementById("Characters_Length").innerHTML = CharactersLength;
 
+// Functions for checkboxes
+var buttonMondstadt = document.getElementById("Mondstadt");
+buttonMondstadt.addEventListener("click", abc);
+
+function abc() {
+    if (document.getElementById('Mondstadt').checked) {
+        console.log("Checked!");
+    } else {
+        console.log("Unchecked!");
+    }
+}
+
+
 // browserify js/genshinmain.js -o js/genshinbundle.js
